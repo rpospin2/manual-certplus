@@ -181,11 +181,6 @@
                         </div>
                         <p class="text-sm text-gray-500 italic">Ilustração de como colar a chave na célula B1</p>
                     </div>
-
-                    <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
-                        <h4 class="font-bold text-lg mb-3 text-navy"><i class="fas fa-folder-open text-blue-500 mr-2"></i> 3. Organize no seu Drive</h4>
-                        <p class="text-gray-700">Atualize e feche a planilha. Vá no seu Google Drive, encontre a planilha <em>"Cópia de CertPlus..."</em> (geralmente fica solta na tela inicial) e <strong>arraste-a para dentro da pasta "CertPlus - Mandado Digitalizados"</strong> (que o sistema criou no Passo 1).</p>
-                    </div>
                 </div>
             </section>
 
@@ -193,18 +188,101 @@
             <section class="bg-white rounded-2xl shadow-md p-8 md:p-10 border-t-4 border-navy hover:shadow-lg transition">
                 <div class="flex items-center mb-6">
                     <span class="bg-navy text-white rounded-full w-10 h-10 inline-flex items-center justify-center text-lg font-bold mr-4 shadow-md">3</span> 
-                    <h2 class="text-3xl font-bold text-navy">A Primeira Leitura (Teste e Permissão)</h2>
+                    <h2 class="text-3xl font-bold text-navy">App no Computador</h2>
                 </div>
-                <p class="text-lg text-gray-700 mb-6">Vamos testar o robô na sua conta Google.</p>
+                <p class="text-lg text-gray-700 mb-6">Conectando a planilha ao aplicativo no PC:</p>
+
+                <div class="space-y-8">
+                    <div>
+                        <p class="text-gray-700 text-lg mb-3"><strong>1.</strong> Abra o aplicativo pelo Link abaixo:</p>
+                        <a href="https://script.google.com/macros/s/AKfycbxIJzoOFVMrFv1_bVpQl6cxuF1jGvTUJW64R5O8A4gHtu2OSb4Z8bKAdRtIMdZMY-IhnA/exec" target="_blank" class="inline-block bg-navy hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg transition shadow-md">
+                            <i class="fas fa-laptop mr-2"></i> Abrir App CertPlus (PC)
+                        </a>
+                    </div>
+
+                    <div>
+                        <p class="text-gray-700 text-lg mb-3"><strong>2.</strong> Com a planilha aberta na aba "Mandados", <strong>copie o link (URL) inteiro</strong> lá na barra de endereços do navegador:</p>
+                        
+                        <!-- Mockup da Barra de Endereço do Navegador -->
+                        <div class="bg-gray-100 border border-gray-300 rounded-full py-2 px-4 flex items-center max-w-2xl shadow-inner mb-2">
+                            <i class="fas fa-lock text-gray-500 mr-3 text-sm"></i>
+                            <span class="text-gray-600 font-mono text-sm truncate flex-1 select-all">https://docs.google.com/spreadsheets/d/**********************/edit#gid=0</span>
+                            <i class="far fa-copy text-gray-400 ml-3 cursor-pointer hover:text-gray-600"></i>
+                        </div>
+                        <p class="text-sm text-gray-500 italic text-center max-w-2xl">Exemplo da barra de endereços (copie tudo)</p>
+                    </div>
+
+                    <div>
+                        <p class="text-gray-700 text-lg mb-3"><strong>3.</strong> Cole o link (URL) da planilha no local indicado e <strong>4.</strong> Clique em <strong>"Conectar"</strong>, conforme foto:</p>
+                        
+                        <!-- Mockup da Tela de Conexão do App -->
+                        <div class="print-mockup border border-gray-200 rounded-xl bg-white p-6 max-w-sm mx-auto mb-2 relative">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-balance-scale text-3xl text-techblue mb-2"></i>
+                                <h4 class="font-bold text-navy text-xl">CertPlus Mandados</h4>
+                                <p class="text-xs text-gray-500">Conecte sua base de dados</p>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-xs font-bold text-gray-700 mb-1">Link da Planilha:</label>
+                                <div class="border-2 border-techblue rounded-md p-2 flex items-center bg-blue-50">
+                                    <i class="fas fa-link text-techblue mr-2 text-sm"></i>
+                                    <span class="text-gray-500 text-xs font-mono truncate">https://docs.google.com/spread...</span>
+                                </div>
+                            </div>
+                            <button class="w-full bg-techblue text-white font-bold py-2 rounded-md shadow flex justify-center items-center">
+                                Conectar <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                            <!-- Cursor ilustrativo -->
+                            <i class="fas fa-mouse-pointer text-xl text-black absolute bottom-4 right-10 drop-shadow-md"></i>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-gray-700 text-lg mb-3"><strong>5.</strong> No primeiro momento, como ainda não há dados importados de Mandados para o sistema a tela vai ficar assim:</p>
+                        
+                        <!-- Mockup da Tela Vazia -->
+                        <div class="print-mockup border border-gray-200 rounded-xl bg-gray-50 p-8 max-w-md mx-auto text-center border-dashed border-2">
+                            <i class="fas fa-folder-open text-gray-300 text-5xl mb-4 drop-shadow-sm"></i>
+                            <h5 class="text-gray-600 font-bold mb-1">Nenhum Mandado Encontrado</h5>
+                            <p class="text-sm text-gray-500">Aguardando dados da planilha...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Passo 4 -->
+            <section class="bg-white rounded-2xl shadow-md p-8 md:p-10 border-t-4 border-techblue hover:shadow-lg transition">
+                <div class="flex items-center mb-6">
+                    <span class="bg-techblue text-white rounded-full w-10 h-10 inline-flex items-center justify-center text-lg font-bold mr-4 shadow-md">4</span> 
+                    <h2 class="text-3xl font-bold text-navy">Preparando os Mandados no Google Drive</h2>
+                </div>
+                
+                <p class="text-lg text-gray-700 mb-6">Abra o seu Google Drive, no menu do lado esquerdo escolha <strong>"Meu Drive"</strong>:</p>
+                <ol class="space-y-4 text-gray-700 text-lg list-decimal pl-6 marker:font-bold marker:text-navy">
+                    <li>Procure pela pasta <strong>'CertPlus - Mandados Digitalizados'</strong> e abra-a.</li>
+                    <li>Você vai perceber que a <em>"Cópia de CertPlus - Planilha Matriz"</em> vai estar lá.</li>
+                    <li>Coloque nesta pasta os PDFs referentes aos Mandados que vai cumprir. 
+                        <div class="bg-blue-50 border-l-4 border-blue-500 p-3 mt-2 text-base text-blue-900 rounded">
+                            <i class="fas fa-info-circle mr-2"></i> <strong>IMPORTANTE:</strong> cada arquivo PDF deve equivaler a um Mandado, não importando quantas páginas (anexos) este Mandado tenha.
+                        </div>
+                    </li>
+                    <li>Aguarde o carregamento dos Mandados dentro desta pasta.</li>
+                </ol>
+            </section>
+
+            <!-- Passo 5 -->
+            <section class="bg-white rounded-2xl shadow-md p-8 md:p-10 border-t-4 border-navy hover:shadow-lg transition">
+                <div class="flex items-center mb-6">
+                    <span class="bg-navy text-white rounded-full w-10 h-10 inline-flex items-center justify-center text-lg font-bold mr-4 shadow-md">5</span> 
+                    <h2 class="text-3xl font-bold text-navy">Extraindo os Mandados (A Primeira Leitura)</h2>
+                </div>
+                <p class="text-lg text-gray-700 mb-6">Volte para a planilha <em>"Cópia de CertPlus - Planilha Matriz"</em>:</p>
 
                 <ol class="space-y-4 text-gray-700 text-lg list-decimal pl-6 marker:font-bold marker:text-navy">
-                    <li>Salve alguns mandados em formato <strong>.pdf</strong> dentro da pasta <em>"CertPlus - Mandado Digitalizados"</em> (a planilha tem que estar na mesma pasta).</li>
-                    <li><em>Dica: Um PDF para cada mandado e seus anexos. Não importa o número de páginas.</em></li>
-                    <li>Abra a sua planilha.</li>
                     <li>No menu superior, clique em <strong>⚙️ CertPlus</strong> > <strong>🤖 2. Extrair Mandados (Robô IA)</strong>.</li>
                     
                     <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded-r-lg my-4 shadow-sm">
-                        <p class="text-sm text-yellow-900"><em>Nota: Se o Google pedir a "Autorização Necessária" novamente nesta etapa, basta repetir o processo de clicar em Avançado > Acessar CertPlus > Permitir, conforme ensinado no Passo 1.</em></p>
+                        <p class="text-base text-yellow-900"><em><strong>Nota:</strong> Se o Google pedir a "Autorização Necessária" novamente nesta etapa, basta repetir o processo de clicar em Avançado > Acessar CertPlus > Permitir, conforme ensinado no Passo 1.</em></p>
                     </div>
 
                     <li>Se foi necessário dar permissão, vá novamente no menu <strong>⚙️ CertPlus</strong> > <strong>🤖 2. Extrair Mandados (Robô IA)</strong>.</li>
@@ -212,44 +290,41 @@
                 </ol>
             </section>
 
-            <!-- Passo 4 e 5 -->
-            <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Passo 6 -->
+            <section class="bg-white rounded-2xl shadow-md p-8 md:p-10 border-t-4 border-techblue hover:shadow-lg transition">
+                <div class="flex items-center mb-6">
+                    <span class="bg-techblue text-white rounded-full w-10 h-10 inline-flex items-center justify-center text-lg font-bold mr-4 shadow-md">6</span> 
+                    <h2 class="text-3xl font-bold text-navy">O Retorno ao Aplicativo</h2>
+                </div>
                 
-                <!-- Passo 4 -->
-                <div class="bg-white rounded-2xl shadow-md p-8 border-t-4 border-techblue hover:shadow-lg transition">
-                    <div class="flex items-center mb-6">
-                        <span class="bg-techblue text-white rounded-full w-10 h-10 inline-flex items-center justify-center text-lg font-bold mr-4 shadow-md">4</span> 
-                        <h2 class="text-2xl font-bold text-navy">App no Computador</h2>
-                    </div>
-                    <p class="text-gray-700 mb-4">Conectando a planilha ao aplicativo no PC:</p>
-                    <ul class="space-y-3 text-gray-700 mb-6">
-                        <li><strong>1.</strong> Com a planilha aberta na aba "Mandados", copie o link (URL) inteiro lá na barra de endereços do navegador.</li>
-                        <li><strong>2.</strong> Abra o aplicativo no botão abaixo:</li>
-                    </ul>
-                    <a href="https://script.google.com/macros/s/AKfycbxIJzoOFVMrFv1_bVpQl6cxuF1jGvTUJW64R5O8A4gHtu2OSb4Z8bKAdRtIMdZMY-IhnA/exec" target="_blank" class="block text-center bg-navy hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-lg transition shadow-md mb-6">
-                        <i class="fas fa-laptop mr-2"></i> Abrir App CertPlus (PC)
-                    </a>
+                <p class="text-xl text-gray-800 font-semibold mb-4">Retorne para a página do aplicativo e atualize-a pressionando <kbd class="bg-gray-200 border border-gray-400 rounded px-2 py-1 text-sm shadow-sm">F5</kbd></p>
+                <p class="text-lg text-gray-700 mb-6">Você verá uma lista de "Cards", sendo que cada um representa um Mandado.</p>
+                
+                <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
+                    <p class="text-gray-800 mb-4 font-medium">Quando for cumprir e certificar, clique no Mandado correspondente e escolha as opções que vão facilitar o registro do ato, inclusive com:</p>
                     <ul class="space-y-3 text-gray-700">
-                        <li><strong>3.</strong> Faça login com o e-mail Google liberado.</li>
-                        <li><strong>4.</strong> Na tela inicial, cole o link da planilha copiado no passo 1 e clique em <strong>Conectar</strong>. Seus mandados aparecerão!</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> Emissão de certidão (diversos modelos prontos e preenchidos automaticamente com os dados do Mandado) para copiar e colar nos sistemas Saj ou Eproc.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> Autos diversos com preenchimento facilitado e possibilidade de assinatura na tela do celular.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> Possibilidade de tirar fotos digitais do Mandado assinado ou de objetos, que vão ser guardadas, organizadas por número de Mandado, numa pasta gerada pelo sistema (dentro daquela mesma pasta criada, onde está a planilha).</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> Entre outras possibilidades...</li>
                     </ul>
                 </div>
+            </section>
 
-                <!-- Passo 5 -->
-                <div class="bg-white rounded-2xl shadow-md p-8 border-t-4 border-navy hover:shadow-lg transition">
-                    <div class="flex items-center mb-6">
-                        <span class="bg-navy text-white rounded-full w-10 h-10 inline-flex items-center justify-center text-lg font-bold mr-4 shadow-md">5</span> 
-                        <h2 class="text-2xl font-bold text-navy">App no Celular</h2>
-                    </div>
-                    <p class="text-gray-700 mb-6">Agora vamos conectar o seu celular para ter acesso a todas as funções mágicas em campo.</p>
-                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 mb-6">
-                        <p class="text-sm font-bold text-gray-600 mb-2">Envie este link para o seu celular (WhatsApp, e-mail):</p>
-                        <div class="bg-white border border-gray-300 p-2 rounded text-xs text-techblue break-all select-all font-mono">
-                            https://script.google.com/macros/s/AKfycbxIJzoOFVMrFv1_bVpQl6cxuF1jGvTUJW64R5O8A4gHtu2OSb4Z8bKAdRtIMdZMY-IhnA/exec
-                        </div>
-                    </div>
-                    <p class="text-gray-700">No celular, abra o link, repita a conexão com o link da planilha e explore todas as facilidades durante os cumprimentos de mandado!</p>
+            <!-- Passo 7 -->
+            <section class="bg-white rounded-2xl shadow-md p-8 md:p-10 border-t-4 border-navy hover:shadow-lg transition">
+                <div class="flex items-center mb-6">
+                    <span class="bg-navy text-white rounded-full w-10 h-10 inline-flex items-center justify-center text-lg font-bold mr-4 shadow-md">7</span> 
+                    <h2 class="text-3xl font-bold text-navy">App no Celular</h2>
                 </div>
+                <p class="text-lg text-gray-700 mb-6">Agora vamos conectar o seu celular para ter acesso a todas as funções mágicas em campo.</p>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-6">
+                    <p class="text-base font-bold text-gray-700 mb-3">Envie este link para o seu celular (por WhatsApp, e-mail, etc):</p>
+                    <div class="bg-white border border-gray-300 p-3 rounded text-sm text-techblue break-all select-all font-mono shadow-inner">
+                        https://script.google.com/macros/s/AKfycbxIJzoOFVMrFv1_bVpQl6cxuF1jGvTUJW64R5O8A4gHtu2OSb4Z8bKAdRtIMdZMY-IhnA/exec
+                    </div>
+                </div>
+                <p class="text-lg text-gray-700">No celular, abra o link, repita a conexão colando o link da planilha e explore todas as facilidades durante os cumprimentos de mandado!</p>
             </section>
 
         </div>
@@ -291,17 +366,6 @@
                         <div>
                             <h4 class="font-bold text-navy text-lg">Ícone na Tela Inicial</h4>
                             <p class="text-gray-600 text-sm mt-2">No Chrome (Android) ou Safari (iPhone), abra o aplicativo, clique nos 3 pontinhos (ou botão compartilhar) e escolha <strong>"Adicionar à Tela Inicial"</strong>. Ele vira um ícone de app normal!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-white hover:border-blue-200 transition">
-                    <div class="flex items-start">
-                        <div class="bg-purple-100 p-3 rounded-full mr-4 text-purple-500"><i class="fas fa-file-signature text-xl"></i></div>
-                        <div>
-                            <h4 class="font-bold text-navy text-lg">Pós-Cumprimento</h4>
-                            <p class="text-gray-600 text-sm mt-2">Ao finalizar um mandado no celular, ele salva na planilha. Para gerar o PDF da certidão final, abra a planilha no PC e use o menu: <strong>⚙️ CertPlus > 📄 3. Gerar Certidões (PDF)</strong>.</p>
                         </div>
                     </div>
                 </div>
